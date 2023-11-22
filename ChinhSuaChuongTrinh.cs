@@ -19,7 +19,7 @@ namespace QuanLySV5T
         }
         
         private SqlCommand command;
-        SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=DBMS_SV5T_K;User ID=sa;Password=ldtrong0");
+        SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=QLSV5T;Integrated Security=True");
         private void KetNoiCSDL()
         {
             conn.Open();
@@ -62,7 +62,7 @@ namespace QuanLySV5T
                 command.Parameters.Add("@DiaDiem", SqlDbType.NVarChar).Value = txt_DiaDiem.Text;
                 command.Parameters.Add("@GioiHanDK", SqlDbType.Int).Value = Convert.ToInt32(txt_GHDK.Text);
                 command.Parameters.Add("@DiemCong", SqlDbType.Int).Value = Convert.ToInt32(txt_DiemCong.Text);
-                command.Parameters.Add("@LoaiCT", SqlDbType.NVarChar).Value = txt_LoaiCT.Text;
+                command.Parameters.Add("@MaTieuChi", SqlDbType.NVarChar).Value = txt_MaTieuChi.Text;
                 command.ExecuteNonQuery();
             conn.Close();
             try
@@ -95,7 +95,7 @@ namespace QuanLySV5T
             command.Parameters.Add("@DiaDiem", SqlDbType.NVarChar).Value = txt_DiaDiem.Text;
             command.Parameters.Add("@GioiHanDK", SqlDbType.Int).Value = Convert.ToInt32(txt_GHDK.Text);
             command.Parameters.Add("@DiemCong", SqlDbType.Int).Value = Convert.ToInt32(txt_DiemCong.Text);
-            command.Parameters.Add("@LoaiCT", SqlDbType.NVarChar).Value = txt_LoaiCT.Text;
+            command.Parameters.Add("@MaTieuChi", SqlDbType.NVarChar).Value = txt_MaTieuChi.Text;
             command.ExecuteNonQuery();
 
             conn.Close();

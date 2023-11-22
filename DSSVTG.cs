@@ -24,7 +24,7 @@ namespace QuanLySV5T
         }
 
         private SqlCommand command;
-        SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=DBMS_SV5T_K;User ID=sa;Password=ldtrong0");
+        SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=QLSV5T;Integrated Security=True");
 
         private void KetNoiCSDL(string maChuongTrinh)
         {
@@ -44,6 +44,13 @@ namespace QuanLySV5T
         private void DSSVTG_Load(object sender, EventArgs e)
         {
             KetNoiCSDL(maChuongTrinh);
+            foreach (DataGridViewRow row in dg_DS.Rows)
+            {
+                if (row.Cells["TrangThai"].Value != null && Convert.ToInt32(row.Cells["TrangThai"].Value) == 1)
+                {
+                    row.Cells["DiemDanh"].ReadOnly = true; // Vô hiệu hóa ô (cell)
+                }
+            }
         }
 
         private void dg_DS_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -55,25 +62,52 @@ namespace QuanLySV5T
         }
         private void dg_DS_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
-            // Kiểm tra nếu ô đang được chỉnh sửa là ô điểm danh và trạng thái là 1
-            if (e.ColumnIndex == dg_DS.Columns["DiemDanh"].Index && e.RowIndex >= 0)
-            {
-                
-
-                // Kiểm tra giá trị trạng thái
-                if (dg_DS.Rows[e.RowIndex].Cells["TrangThai"].Value != null && dg_DS.Rows[e.RowIndex].Cells["TrangThai"].Value.ToString() == "1")
-                {
-                    e.Cancel = true; // Vô hiệu hóa chỉnh sửa ô điểm danh
-                }
-            }
+           
         }
+        private void dg_DS_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+                DataGridViewCheckBoxCell checkBoxCell = dg_DS.Rows[e.RowIndex].Cells[e.ColumnIndex] as DataGridViewCheckBoxCell;
+                bool isChecked = Convert.ToBoolean(checkBoxCell.Value);
+
+                // Xử lý logic tương ứng với thay đổi trạng thái của ô kiểm
+                if (isChecked)
+                {
+                    // Ô kiểm đã được chọn
+                    SqlCommand command = new SqlCommand("UpdateTrangThaiToOne", conn);
+                    command.CommandType = CommandType.StoredProcedure;
+                    string MaSV = dg_DS.Rows[e.RowIndex].Cells["MaSV"].Value.ToString();
+                    SqlParameter p = new SqlParameter("@MaSV", Convert.ToInt32(MaSV));
+                    command.Parameters.Add(p);
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("chạy r đó");
+                    KetNoiCSDL(maChuongTrinh);
+                }
+                
+        }
+             
+        
         private void dg_DS_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
            /* MessageBox.Show(e.RowIndex.ToString());
-            MessageBox.Show(e.RowIndex.ToString());
+            int rowIndex = e.RowIndex;
+                DataGridViewCheckBoxCell checkBoxCell = dg_DS.Rows[rowIndex].Cells["DiemDanh"] as DataGridViewCheckBoxCell;
+                bool isChecked = Convert.ToBoolean(checkBoxCell.Value);
+
+                if (isChecked)
+                {
+                    // Ô checkbox được tích
+                    // Xử lý logic tương ứng
+                    SqlCommand command = new SqlCommand("UpdateTrangThaiToOne", conn);
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.ExecuteNonQuery();
+                }
+            
+            /*MessageBox.Show(e.ColumnIndex.ToString());
             if (e.ColumnIndex == 4)
             {
-                DataGridViewCheckBoxCell checkBoxCell = (DataGridViewCheckBoxCell)dg_DS.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                int row = e.RowIndex;
+                DataGridViewCheckBoxCell checkBoxCell = (DataGridViewCheckBoxCell)dg_DS.Rows[row].Cells["DiemDanh"];
                 bool isChecked = (bool)checkBoxCell.Value;
                 MessageBox.Show(e.RowIndex.ToString());
 
@@ -86,24 +120,10 @@ namespace QuanLySV5T
                     command.ExecuteNonQuery();
 
                   
-                }
-                else
-                {
-                    // Ô checkbox không được tích
-                    // Xử lý logic tương ứng
-                    SqlCommand command = new SqlCommand("UpdateTrangThaiToZero", conn);
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.ExecuteNonQuery();
-
-                  
-                }
-                
+                } 
             }*/
         }
 
-        private void dg_DS_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
     }
 }

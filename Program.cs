@@ -17,6 +17,7 @@ namespace QuanLySV5T
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new QuanLyChung_QuanTriVien());
+            //Application.Run(new QuanLyChung());
         }
     }
 }

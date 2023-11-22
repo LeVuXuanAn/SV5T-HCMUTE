@@ -15,7 +15,7 @@ namespace QLSV5T
     public partial class ThongKe : Form
     {
         SqlConnection ketNoi;
-        string chuoiKetNoi = @"Data Source=LAPTOP-D9J937E4;Initial Catalog=QLSV5T;Integrated Security=True";
+        string chuoiKetNoi = @"Data Source=localhost;Initial Catalog=QLSV5T;Integrated Security=True";
         public ThongKe()
         {
             InitializeComponent();

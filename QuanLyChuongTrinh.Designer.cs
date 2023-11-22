@@ -33,15 +33,15 @@ namespace QuanLySV5T
             this.label1 = new System.Windows.Forms.Label();
             this.btn_taoCT = new System.Windows.Forms.Button();
             this.dg_QLCT = new System.Windows.Forms.DataGridView();
-            this.MaCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DSSVTG = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.LoaiCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_HienThi = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_Nhap = new System.Windows.Forms.TextBox();
             this.btn_TimKiem = new System.Windows.Forms.Button();
+            this.MaCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DSSVTG = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.MaTieuChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dg_QLCT)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +72,7 @@ namespace QuanLySV5T
             this.MaCT,
             this.TenCT,
             this.DSSVTG,
-            this.LoaiCT,
+            this.MaTieuChi,
             this.TrangThai});
             this.dg_QLCT.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dg_QLCT.Location = new System.Drawing.Point(0, 179);
@@ -82,53 +82,6 @@ namespace QuanLySV5T
             this.dg_QLCT.Size = new System.Drawing.Size(666, 271);
             this.dg_QLCT.TabIndex = 48;
             this.dg_QLCT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_QLCT_CellClick);
-            // 
-            // MaCT
-            // 
-            this.MaCT.DataPropertyName = "MaCT";
-            this.MaCT.HeaderText = "Mã Chương Trình";
-            this.MaCT.MinimumWidth = 6;
-            this.MaCT.Name = "MaCT";
-            this.MaCT.Width = 125;
-            // 
-            // TenCT
-            // 
-            this.TenCT.DataPropertyName = "TenCT";
-            this.TenCT.HeaderText = "Tên Chương Trình";
-            this.TenCT.MinimumWidth = 6;
-            this.TenCT.Name = "TenCT";
-            this.TenCT.Width = 125;
-            // 
-            // DSSVTG
-            // 
-            this.DSSVTG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("High Tower Text", 8.25F);
-            this.DSSVTG.DefaultCellStyle = dataGridViewCellStyle1;
-            this.DSSVTG.HeaderText = "Danh sách SV TG";
-            this.DSSVTG.MinimumWidth = 6;
-            this.DSSVTG.Name = "DSSVTG";
-            this.DSSVTG.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.DSSVTG.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.DSSVTG.Text = "Kick đây nè";
-            this.DSSVTG.UseColumnTextForButtonValue = true;
-            this.DSSVTG.Width = 120;
-            // 
-            // LoaiCT
-            // 
-            this.LoaiCT.DataPropertyName = "LoaiCT";
-            this.LoaiCT.HeaderText = "LoaiCT";
-            this.LoaiCT.MinimumWidth = 6;
-            this.LoaiCT.Name = "LoaiCT";
-            this.LoaiCT.Width = 125;
-            // 
-            // TrangThai
-            // 
-            this.TrangThai.DataPropertyName = "TrangThai";
-            this.TrangThai.HeaderText = "Trạng Thái";
-            this.TrangThai.MinimumWidth = 6;
-            this.TrangThai.Name = "TrangThai";
-            this.TrangThai.Width = 125;
             // 
             // btn_HienThi
             // 
@@ -166,6 +119,53 @@ namespace QuanLySV5T
             this.btn_TimKiem.UseVisualStyleBackColor = true;
             this.btn_TimKiem.Click += new System.EventHandler(this.btn_TimKiem_Click);
             // 
+            // MaCT
+            // 
+            this.MaCT.DataPropertyName = "MaCT";
+            this.MaCT.HeaderText = "Mã Chương Trình";
+            this.MaCT.MinimumWidth = 6;
+            this.MaCT.Name = "MaCT";
+            this.MaCT.Width = 125;
+            // 
+            // TenCT
+            // 
+            this.TenCT.DataPropertyName = "TenCT";
+            this.TenCT.HeaderText = "Tên Chương Trình";
+            this.TenCT.MinimumWidth = 6;
+            this.TenCT.Name = "TenCT";
+            this.TenCT.Width = 125;
+            // 
+            // DSSVTG
+            // 
+            this.DSSVTG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("High Tower Text", 8.25F);
+            this.DSSVTG.DefaultCellStyle = dataGridViewCellStyle1;
+            this.DSSVTG.HeaderText = "Danh sách SV TG";
+            this.DSSVTG.MinimumWidth = 6;
+            this.DSSVTG.Name = "DSSVTG";
+            this.DSSVTG.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.DSSVTG.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.DSSVTG.Text = "Kick đây nè";
+            this.DSSVTG.UseColumnTextForButtonValue = true;
+            this.DSSVTG.Width = 120;
+            // 
+            // MaTieuChi
+            // 
+            this.MaTieuChi.DataPropertyName = "MaTieuChi";
+            this.MaTieuChi.HeaderText = "Mã tiêu chí";
+            this.MaTieuChi.MinimumWidth = 6;
+            this.MaTieuChi.Name = "MaTieuChi";
+            this.MaTieuChi.Width = 125;
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.DataPropertyName = "TrangThai";
+            this.TrangThai.HeaderText = "Trạng Thái";
+            this.TrangThai.MinimumWidth = 6;
+            this.TrangThai.Name = "TrangThai";
+            this.TrangThai.Width = 125;
+            // 
             // QuanLyChuongTrinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -198,7 +198,7 @@ namespace QuanLySV5T
         private System.Windows.Forms.DataGridViewTextBoxColumn MaCT;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenCT;
         private System.Windows.Forms.DataGridViewButtonColumn DSSVTG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiCT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaTieuChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
     }
 }

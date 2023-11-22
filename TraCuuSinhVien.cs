@@ -14,7 +14,7 @@ namespace QuanLySV5T
     public partial class TraCuuSinhVien : Form
     {
         SqlConnection ketNoi;
-        String chuoiKetNoi = @"Data Source=LAPTOP-D9J937E4;Initial Catalog=QLSV5T;Integrated Security=True";
+        String chuoiKetNoi = @"Data Source=localhost;Initial Catalog=QLSV5T;Integrated Security=True";
         SqlCommand thucHien;
         SqlDataReader docDuLieu;
         string lenh;

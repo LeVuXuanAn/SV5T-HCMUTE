@@ -18,8 +18,8 @@ namespace QuanLySV5T
             InitializeComponent();
         }
         private SqlCommand command;
-        SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=DBMS_SV5T_K;User ID=sa;Password=ldtrong0");
-        string sql = "Select MaCT,TenCT,LoaiCT,TrangThai From CHUONGTRINH";
+        SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=QLSV5T;Integrated Security=True");
+        string sql = "Select MaCT,TenCT,MaTieuChi,TrangThai From CHUONGTRINH";
         private void KetNoiCSDL(String sql)
         {
             conn.Open();
@@ -34,12 +34,12 @@ namespace QuanLySV5T
 
         private void QuanLyChuongTrinh_Load(object sender, EventArgs e)
         {
-            KetNoiCSDL("Select MaCT,TenCT,LoaiCT,TrangThai From CHUONGTRINH");
+            KetNoiCSDL("Select MaCT,TenCT,MaTieuChi,TrangThai From CHUONGTRINH");
         }
 
         private void btn_HienThi_Click(object sender, EventArgs e)
         {
-            KetNoiCSDL("Select MaCT,TenCT,LoaiCT,TrangThai From CHUONGTRINH");
+            KetNoiCSDL("Select MaCT,TenCT,MaTieuChi,TrangThai From CHUONGTRINH");
         }
 
         private void btn_TimKiem_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace QuanLySV5T
             }
             else
             {
-                String sql1 = "Select MaCT,TenCT,LoaiCT,TrangThai From CHUONGTRINH where CHUONGTRINH.LoaiCT LIKE '" + find + "'";
+                String sql1 = "Select MaCT,TenCT,MaTieuChi,TrangThai From CHUONGTRINH where CHUONGTRINH.LoaiCT LIKE '" + find + "'";
                 KetNoiCSDL(sql1);
             }
         }
@@ -63,6 +63,7 @@ namespace QuanLySV5T
             
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
+              
                 int row = e.RowIndex;
                 string maChuongTrinh = dg_QLCT.Rows[row].Cells["MaCT"].Value.ToString();
                 DSSVTG DS = new DSSVTG(maChuongTrinh);

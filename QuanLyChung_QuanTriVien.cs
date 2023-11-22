@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLSV5T;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -61,8 +62,8 @@ namespace QuanLySV5T
 
         private void btn_TongQuan_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new ThongKe());
-            buttonChangeColor(btn_TongQuan, null);
+            OpenChildForm(new DanhSachSV5T());
+            buttonChangeColor(btn_SV5T, null);
         }
 
         private void btn_ChuongTrinh_Click(object sender, EventArgs e)
@@ -73,7 +74,7 @@ namespace QuanLySV5T
 
         private void btn_SinhVien_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new SinhVien());
+            OpenChildForm(new TraCuuSinhVien());
             buttonChangeColor(btn_SinhVien, null);
         }
 
@@ -81,6 +82,12 @@ namespace QuanLySV5T
         {
             OpenChildForm(new Diem());
             buttonChangeColor(btn_Diem, null);
+        }
+
+        private void btn_TongQuan_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new ThongKe());
+            buttonChangeColor(btn_TongQuan, null);
         }
     }
 }
