@@ -119,19 +119,15 @@
     <Compile Include="TichLuy.Designer.cs">
       <DependentUpon>TichLuy.cs</DependentUpon>
     </Compile>
-    <Compile Include="TongQuan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TongQuan.Designer.cs">
-      <DependentUpon>TongQuan.cs</DependentUpon>
-    </Compile>
     <Compile Include="TraCuu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TraCuu.Designer.cs">
       <DependentUpon>TraCuu.cs</DependentUpon>
     </Compile>
-    <Compile Include="TraCuuSinhVien.cs" />
+    <Compile Include="TraCuuSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TraCuuSinhVien.designer.cs">
       <DependentUpon>TraCuuSinhVien.cs</DependentUpon>
     </Compile>
@@ -192,9 +188,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TichLuy.resx">
       <DependentUpon>TichLuy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TongQuan.resx">
-      <DependentUpon>TongQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TraCuu.resx">
       <DependentUpon>TraCuu.cs</DependentUpon>

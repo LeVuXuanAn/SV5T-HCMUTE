@@ -61,7 +61,7 @@ namespace QuanLySV5T
 
         private void btn_TongQuan_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new TongQuan());
+            OpenChildForm(new ThongKe());
             buttonChangeColor(btn_TongQuan, null);
         }
 
