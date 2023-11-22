@@ -67,7 +67,7 @@ namespace QuanLySV5T
 
         private void btn_ChuongTrinh_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new ChuongTrinh());
+            OpenChildForm(new QuanLyChuongTrinh());
             buttonChangeColor(btn_ChuongTrinh, null);
         }
 

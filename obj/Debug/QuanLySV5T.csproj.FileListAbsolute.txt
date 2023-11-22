@@ -21,3 +21,27 @@ D:\DOAN HOI\HE QUAN TRINH CSDL\QuanLySV5T\obj\Debug\QuanLySV5T.SinhVien.resource
 D:\DOAN HOI\HE QUAN TRINH CSDL\QuanLySV5T\obj\Debug\QuanLySV5T.Diem.resources
 D:\DOAN HOI\HE QUAN TRINH CSDL\QuanLySV5T\obj\Debug\QuanLySV5T.ThemChuongTrinh.resources
 D:\DOAN HOI\HE QUAN TRINH CSDL\QuanLySV5T\obj\Debug\QuanLySV5T.ChinhSuaChuongTrinh.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\bin\Debug\QuanLySV5T.exe.config
+C:\Users\HP\source\repos\SV5T-HCMUTE\bin\Debug\QuanLySV5T.exe
+C:\Users\HP\source\repos\SV5T-HCMUTE\bin\Debug\QuanLySV5T.pdb
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.ChinhsuaChuongtrinh.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.DangNhap.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.Diem.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.DSSVTG.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.GopY.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.QuanLyChung.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.Properties.Resources.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.QuanLyChung_QuanTriVien.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.QuanLyChuongTrinh.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.QuanLyDangNhap.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.SinhVien.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.ThemChuongTrinh.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.TichLuy.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.TongQuan.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.TraCuu.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.TrangChu.resources
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.exe
+C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.pdb

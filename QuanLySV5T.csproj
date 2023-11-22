@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>QuanLySV5T</RootNamespace>
     <AssemblyName>QuanLySV5T</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -47,17 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChinhSuaChuongTrinh.cs">
+    <Compile Include="ChinhsuaChuongtrinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChinhSuaChuongTrinh.Designer.cs">
-      <DependentUpon>ChinhSuaChuongTrinh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChuongTrinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChuongTrinh.Designer.cs">
-      <DependentUpon>ChuongTrinh.cs</DependentUpon>
+    <Compile Include="ChinhsuaChuongtrinh.designer.cs">
+      <DependentUpon>ChinhsuaChuongtrinh.cs</DependentUpon>
     </Compile>
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
@@ -71,6 +65,12 @@
     <Compile Include="Diem.Designer.cs">
       <DependentUpon>Diem.cs</DependentUpon>
     </Compile>
+    <Compile Include="DSSVTG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSSVTG.designer.cs">
+      <DependentUpon>DSSVTG.cs</DependentUpon>
+    </Compile>
     <Compile Include="GopY.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +82,12 @@
     </Compile>
     <Compile Include="QuanLyChung_QuanTriVien.Designer.cs">
       <DependentUpon>QuanLyChung_QuanTriVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyChuongTrinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyChuongTrinh.designer.cs">
+      <DependentUpon>QuanLyChuongTrinh.cs</DependentUpon>
     </Compile>
     <Compile Include="QuanLyDangNhap.cs">
       <SubType>Form</SubType>
@@ -134,17 +140,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ChinhSuaChuongTrinh.resx">
-      <DependentUpon>ChinhSuaChuongTrinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChuongTrinh.resx">
-      <DependentUpon>ChuongTrinh.cs</DependentUpon>
+    <EmbeddedResource Include="ChinhsuaChuongtrinh.resx">
+      <DependentUpon>ChinhsuaChuongtrinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Diem.resx">
       <DependentUpon>Diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSSVTG.resx">
+      <DependentUpon>DSSVTG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GopY.resx">
       <DependentUpon>GopY.cs</DependentUpon>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyChung_QuanTriVien.resx">
       <DependentUpon>QuanLyChung_QuanTriVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyChuongTrinh.resx">
+      <DependentUpon>QuanLyChuongTrinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyDangNhap.resx">
       <DependentUpon>QuanLyDangNhap.cs</DependentUpon>
