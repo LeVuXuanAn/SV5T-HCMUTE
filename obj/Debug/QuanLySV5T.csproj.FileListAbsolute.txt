@@ -36,7 +36,6 @@ C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.QuanLyChung_QuanTriVie
 C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.QuanLyChuongTrinh.resources
 C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.QuanLyDangNhap.resources
 C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.SinhVien.resources
-C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.ThemChuongTrinh.resources
 C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.TichLuy.resources
 C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.TongQuan.resources
 C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.TraCuu.resources

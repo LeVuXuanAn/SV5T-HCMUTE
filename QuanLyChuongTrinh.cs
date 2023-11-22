@@ -65,7 +65,6 @@ namespace QuanLySV5T
             {
                 int row = e.RowIndex;
                 string maChuongTrinh = dg_QLCT.Rows[row].Cells["MaCT"].Value.ToString();
-                MessageBox.Show(maChuongTrinh.ToString());
                 DSSVTG DS = new DSSVTG(maChuongTrinh);
                 DS.Show();
             }

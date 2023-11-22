@@ -57,7 +57,8 @@ namespace QuanLySV5T
         private void dg_DS_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             
-            /*if (e.ColumnIndex == 4)
+            
+            if (e.ColumnIndex == 4)
             {
                 DataGridViewCheckBoxCell checkBoxCell = (DataGridViewCheckBoxCell)dg_DS.Rows[e.RowIndex].Cells[e.ColumnIndex];
                 bool isChecked = (bool)checkBoxCell.Value;
@@ -82,7 +83,8 @@ namespace QuanLySV5T
 
                   
                 }
-            }*/
+                
+            }
         }
     }
 }
