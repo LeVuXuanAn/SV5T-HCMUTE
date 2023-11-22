@@ -89,6 +89,7 @@ namespace QuanLySV5T
             this.dg_TaoCT.RowTemplate.Height = 24;
             this.dg_TaoCT.Size = new System.Drawing.Size(800, 182);
             this.dg_TaoCT.TabIndex = 0;
+            this.dg_TaoCT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_TaoCT_CellContentClick);
             // 
             // MaCT
             // 

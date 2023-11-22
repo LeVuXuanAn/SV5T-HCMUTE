@@ -139,5 +139,10 @@ namespace QuanLySV5T
                 MessageBox.Show("Không thể xóa");
             }
         }
+
+        private void dg_TaoCT_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

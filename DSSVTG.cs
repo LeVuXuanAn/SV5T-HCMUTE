@@ -53,7 +53,20 @@ namespace QuanLySV5T
                 e.Value = e.RowIndex + 1; // Thêm 1 vào chỉ mục hàng để tạo STT bắt đầu từ 1
             }
         }
-        
+        private void dg_DS_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            // Kiểm tra nếu ô đang được chỉnh sửa là ô điểm danh và trạng thái là 1
+            if (e.ColumnIndex == dg_DS.Columns["DiemDanh"].Index && e.RowIndex >= 0)
+            {
+                
+
+                // Kiểm tra giá trị trạng thái
+                if (dg_DS.Rows[e.RowIndex].Cells["TrangThai"].Value != null && dg_DS.Rows[e.RowIndex].Cells["TrangThai"].Value.ToString() == "1")
+                {
+                    e.Cancel = true; // Vô hiệu hóa chỉnh sửa ô điểm danh
+                }
+            }
+        }
         private void dg_DS_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
            /* MessageBox.Show(e.RowIndex.ToString());
