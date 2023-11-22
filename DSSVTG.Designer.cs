@@ -48,13 +48,13 @@ namespace QuanLySV5T
             this.MaSV,
             this.TrangThai,
             this.DiemDanh});
-            this.dg_DS.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dg_DS.Location = new System.Drawing.Point(0, 124);
             this.dg_DS.Name = "dg_DS";
             this.dg_DS.RowHeadersWidth = 51;
             this.dg_DS.RowTemplate.Height = 24;
             this.dg_DS.Size = new System.Drawing.Size(689, 326);
             this.dg_DS.TabIndex = 0;
+            this.dg_DS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_DS_CellContentClick);
             this.dg_DS.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dg_DS_CellFormatting);
             this.dg_DS.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_DS_CellValueChanged);
             // 
@@ -113,8 +113,8 @@ namespace QuanLySV5T
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(689, 450);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dg_DS);
+            this.Controls.Add(this.label1);
             this.Name = "DSSVTG";
             this.Text = "DSSVTG";
             this.Load += new System.EventHandler(this.DSSVTG_Load);

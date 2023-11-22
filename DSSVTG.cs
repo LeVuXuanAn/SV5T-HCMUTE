@@ -53,15 +53,16 @@ namespace QuanLySV5T
                 e.Value = e.RowIndex + 1; // Thêm 1 vào chỉ mục hàng để tạo STT bắt đầu từ 1
             }
         }
-
+        
         private void dg_DS_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            
-            
+           /* MessageBox.Show(e.RowIndex.ToString());
+            MessageBox.Show(e.RowIndex.ToString());
             if (e.ColumnIndex == 4)
             {
                 DataGridViewCheckBoxCell checkBoxCell = (DataGridViewCheckBoxCell)dg_DS.Rows[e.RowIndex].Cells[e.ColumnIndex];
                 bool isChecked = (bool)checkBoxCell.Value;
+                MessageBox.Show(e.RowIndex.ToString());
 
                 if (isChecked)
                 {
@@ -84,7 +85,12 @@ namespace QuanLySV5T
                   
                 }
                 
-            }
+            }*/
+        }
+
+        private void dg_DS_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
