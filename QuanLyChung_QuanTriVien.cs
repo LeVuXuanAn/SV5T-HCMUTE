@@ -52,7 +52,8 @@ namespace QuanLySV5T
             DialogResult msg = MessageBox.Show(this, "Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (msg == DialogResult.Yes)
             {
-                this.Close();
+                DangNhap DN = new DangNhap();
+                DN.Show();
             }
             else
             {

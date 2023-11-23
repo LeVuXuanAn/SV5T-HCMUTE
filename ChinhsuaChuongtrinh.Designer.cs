@@ -30,16 +30,6 @@ namespace QuanLySV5T
         private void InitializeComponent()
         {
             this.dg_TaoCT = new System.Windows.Forms.DataGridView();
-            this.MaCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MoTa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThoiGianBDCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThoiGianKTCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiHanDK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiemCong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoaiCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,7 +39,7 @@ namespace QuanLySV5T
             this.txt_TenCT = new System.Windows.Forms.TextBox();
             this.txt_MoTa = new System.Windows.Forms.TextBox();
             this.txt_TrangThai = new System.Windows.Forms.TextBox();
-            this.txt_LoaiCT = new System.Windows.Forms.TextBox();
+            this.txt_MaTieuChi = new System.Windows.Forms.TextBox();
             this.txt_DiemCong = new System.Windows.Forms.TextBox();
             this.txt_GHDK = new System.Windows.Forms.TextBox();
             this.txt_DiaDiem = new System.Windows.Forms.TextBox();
@@ -64,6 +54,16 @@ namespace QuanLySV5T
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.MaCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MoTa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThoiGianBDCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThoiGianKTCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiHanDK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiemCong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaTieuChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dg_TaoCT)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -81,7 +81,7 @@ namespace QuanLySV5T
             this.DiaDiem,
             this.GioiHanDK,
             this.DiemCong,
-            this.LoaiCT});
+            this.MaTieuChi});
             this.dg_TaoCT.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dg_TaoCT.Location = new System.Drawing.Point(0, 268);
             this.dg_TaoCT.Name = "dg_TaoCT";
@@ -90,86 +90,6 @@ namespace QuanLySV5T
             this.dg_TaoCT.Size = new System.Drawing.Size(800, 182);
             this.dg_TaoCT.TabIndex = 0;
             this.dg_TaoCT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_TaoCT_CellContentClick);
-            // 
-            // MaCT
-            // 
-            this.MaCT.DataPropertyName = "MaCT";
-            this.MaCT.HeaderText = "Mã CT";
-            this.MaCT.MinimumWidth = 6;
-            this.MaCT.Name = "MaCT";
-            this.MaCT.Width = 125;
-            // 
-            // TenCT
-            // 
-            this.TenCT.DataPropertyName = "TenCT";
-            this.TenCT.HeaderText = "Tên CT";
-            this.TenCT.MinimumWidth = 6;
-            this.TenCT.Name = "TenCT";
-            this.TenCT.Width = 125;
-            // 
-            // MoTa
-            // 
-            this.MoTa.DataPropertyName = "MoTa";
-            this.MoTa.HeaderText = "Mô tả";
-            this.MoTa.MinimumWidth = 6;
-            this.MoTa.Name = "MoTa";
-            this.MoTa.Width = 125;
-            // 
-            // TrangThai
-            // 
-            this.TrangThai.DataPropertyName = "TrangThai";
-            this.TrangThai.HeaderText = "Trạng thái";
-            this.TrangThai.MinimumWidth = 6;
-            this.TrangThai.Name = "TrangThai";
-            this.TrangThai.Width = 125;
-            // 
-            // ThoiGianBDCT
-            // 
-            this.ThoiGianBDCT.DataPropertyName = "ThoiGianBDCT";
-            this.ThoiGianBDCT.HeaderText = "TgianBDCT";
-            this.ThoiGianBDCT.MinimumWidth = 6;
-            this.ThoiGianBDCT.Name = "ThoiGianBDCT";
-            this.ThoiGianBDCT.Width = 125;
-            // 
-            // ThoiGianKTCT
-            // 
-            this.ThoiGianKTCT.DataPropertyName = "ThoiGianKTCT";
-            this.ThoiGianKTCT.HeaderText = "TgianKTCT";
-            this.ThoiGianKTCT.MinimumWidth = 6;
-            this.ThoiGianKTCT.Name = "ThoiGianKTCT";
-            this.ThoiGianKTCT.Width = 125;
-            // 
-            // DiaDiem
-            // 
-            this.DiaDiem.DataPropertyName = "DiaDiem";
-            this.DiaDiem.HeaderText = "Địa điểm";
-            this.DiaDiem.MinimumWidth = 6;
-            this.DiaDiem.Name = "DiaDiem";
-            this.DiaDiem.Width = 125;
-            // 
-            // GioiHanDK
-            // 
-            this.GioiHanDK.DataPropertyName = "GioiHanDK";
-            this.GioiHanDK.HeaderText = "Giới hạn DK";
-            this.GioiHanDK.MinimumWidth = 6;
-            this.GioiHanDK.Name = "GioiHanDK";
-            this.GioiHanDK.Width = 125;
-            // 
-            // DiemCong
-            // 
-            this.DiemCong.DataPropertyName = "DiemCong";
-            this.DiemCong.HeaderText = "Điểm cộng";
-            this.DiemCong.MinimumWidth = 6;
-            this.DiemCong.Name = "DiemCong";
-            this.DiemCong.Width = 125;
-            // 
-            // LoaiCT
-            // 
-            this.LoaiCT.DataPropertyName = "LoaiCT";
-            this.LoaiCT.HeaderText = "Loại CT";
-            this.LoaiCT.MinimumWidth = 6;
-            this.LoaiCT.Name = "LoaiCT";
-            this.LoaiCT.Width = 125;
             // 
             // label1
             // 
@@ -244,12 +164,12 @@ namespace QuanLySV5T
             this.txt_TrangThai.Size = new System.Drawing.Size(100, 22);
             this.txt_TrangThai.TabIndex = 9;
             // 
-            // txt_LoaiCT
+            // txt_MaTieuChi
             // 
-            this.txt_LoaiCT.Location = new System.Drawing.Point(504, 154);
-            this.txt_LoaiCT.Name = "txt_LoaiCT";
-            this.txt_LoaiCT.Size = new System.Drawing.Size(100, 22);
-            this.txt_LoaiCT.TabIndex = 20;
+            this.txt_MaTieuChi.Location = new System.Drawing.Point(504, 154);
+            this.txt_MaTieuChi.Name = "txt_MaTieuChi";
+            this.txt_MaTieuChi.Size = new System.Drawing.Size(100, 22);
+            this.txt_MaTieuChi.TabIndex = 20;
             // 
             // txt_DiemCong
             // 
@@ -277,9 +197,9 @@ namespace QuanLySV5T
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(367, 159);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 17);
+            this.label6.Size = new System.Drawing.Size(83, 17);
             this.label6.TabIndex = 15;
-            this.label6.Text = "Loại CT";
+            this.label6.Text = "Mã Tiêu Chí";
             // 
             // label7
             // 
@@ -375,7 +295,7 @@ namespace QuanLySV5T
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btn_Tao);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txt_LoaiCT);
+            this.groupBox1.Controls.Add(this.txt_MaTieuChi);
             this.groupBox1.Controls.Add(this.txt_MaCT);
             this.groupBox1.Controls.Add(this.txt_DiemCong);
             this.groupBox1.Controls.Add(this.txt_TenCT);
@@ -394,6 +314,86 @@ namespace QuanLySV5T
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
+            // 
+            // MaCT
+            // 
+            this.MaCT.DataPropertyName = "MaCT";
+            this.MaCT.HeaderText = "Mã CT";
+            this.MaCT.MinimumWidth = 6;
+            this.MaCT.Name = "MaCT";
+            this.MaCT.Width = 125;
+            // 
+            // TenCT
+            // 
+            this.TenCT.DataPropertyName = "TenCT";
+            this.TenCT.HeaderText = "Tên CT";
+            this.TenCT.MinimumWidth = 6;
+            this.TenCT.Name = "TenCT";
+            this.TenCT.Width = 125;
+            // 
+            // MoTa
+            // 
+            this.MoTa.DataPropertyName = "MoTa";
+            this.MoTa.HeaderText = "Mô tả";
+            this.MoTa.MinimumWidth = 6;
+            this.MoTa.Name = "MoTa";
+            this.MoTa.Width = 125;
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.DataPropertyName = "TrangThai";
+            this.TrangThai.HeaderText = "Trạng thái";
+            this.TrangThai.MinimumWidth = 6;
+            this.TrangThai.Name = "TrangThai";
+            this.TrangThai.Width = 125;
+            // 
+            // ThoiGianBDCT
+            // 
+            this.ThoiGianBDCT.DataPropertyName = "ThoiGianBDCT";
+            this.ThoiGianBDCT.HeaderText = "TgianBDCT";
+            this.ThoiGianBDCT.MinimumWidth = 6;
+            this.ThoiGianBDCT.Name = "ThoiGianBDCT";
+            this.ThoiGianBDCT.Width = 125;
+            // 
+            // ThoiGianKTCT
+            // 
+            this.ThoiGianKTCT.DataPropertyName = "ThoiGianKTCT";
+            this.ThoiGianKTCT.HeaderText = "TgianKTCT";
+            this.ThoiGianKTCT.MinimumWidth = 6;
+            this.ThoiGianKTCT.Name = "ThoiGianKTCT";
+            this.ThoiGianKTCT.Width = 125;
+            // 
+            // DiaDiem
+            // 
+            this.DiaDiem.DataPropertyName = "DiaDiem";
+            this.DiaDiem.HeaderText = "Địa điểm";
+            this.DiaDiem.MinimumWidth = 6;
+            this.DiaDiem.Name = "DiaDiem";
+            this.DiaDiem.Width = 125;
+            // 
+            // GioiHanDK
+            // 
+            this.GioiHanDK.DataPropertyName = "GioiHanDK";
+            this.GioiHanDK.HeaderText = "Giới hạn DK";
+            this.GioiHanDK.MinimumWidth = 6;
+            this.GioiHanDK.Name = "GioiHanDK";
+            this.GioiHanDK.Width = 125;
+            // 
+            // DiemCong
+            // 
+            this.DiemCong.DataPropertyName = "DiemCong";
+            this.DiemCong.HeaderText = "Điểm cộng";
+            this.DiemCong.MinimumWidth = 6;
+            this.DiemCong.Name = "DiemCong";
+            this.DiemCong.Width = 125;
+            // 
+            // MaTieuChi
+            // 
+            this.MaTieuChi.DataPropertyName = "MaTieuChi";
+            this.MaTieuChi.HeaderText = "Mã Tiêu Chí";
+            this.MaTieuChi.MinimumWidth = 6;
+            this.MaTieuChi.Name = "MaTieuChi";
+            this.MaTieuChi.Width = 125;
             // 
             // ChinhsuaChuongtrinh
             // 
@@ -424,7 +424,7 @@ namespace QuanLySV5T
         private System.Windows.Forms.TextBox txt_TenCT;
         private System.Windows.Forms.TextBox txt_MoTa;
         private System.Windows.Forms.TextBox txt_TrangThai;
-        private System.Windows.Forms.TextBox txt_LoaiCT;
+        private System.Windows.Forms.TextBox txt_MaTieuChi;
         private System.Windows.Forms.TextBox txt_DiemCong;
         private System.Windows.Forms.TextBox txt_GHDK;
         private System.Windows.Forms.TextBox txt_DiaDiem;
@@ -434,6 +434,11 @@ namespace QuanLySV5T
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btn_Tao;
+        private System.Windows.Forms.DateTimePicker dt_BD;
+        private System.Windows.Forms.DateTimePicker dt_KT;
+        private System.Windows.Forms.Button btn_Sua;
+        private System.Windows.Forms.Button btn_Xoa;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaCT;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenCT;
         private System.Windows.Forms.DataGridViewTextBoxColumn MoTa;
@@ -443,11 +448,6 @@ namespace QuanLySV5T
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaDiem;
         private System.Windows.Forms.DataGridViewTextBoxColumn GioiHanDK;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiemCong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiCT;
-        private System.Windows.Forms.DateTimePicker dt_BD;
-        private System.Windows.Forms.DateTimePicker dt_KT;
-        private System.Windows.Forms.Button btn_Sua;
-        private System.Windows.Forms.Button btn_Xoa;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaTieuChi;
     }
 }
