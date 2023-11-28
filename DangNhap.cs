@@ -24,12 +24,30 @@ namespace QuanLySV5T
             InitializeComponent();
             ketNoi = new SqlConnection(chuoiKetNoi);
         }
+
+        //Thêm vào ------------------------------------------------------------
+        private void OpenFormQuanLyChung()
+        {
+            SharedData.GiaTri = txbTenTK.Text;
+            QuanLyChung form1 = new QuanLyChung();
+            form1.Show();
+        }
+        private void OpenFormQuanLyChung_QuanTriVien()
+        {
+            SharedData.GiaTri = txbTenTK.Text;
+            QuanLyChung_QuanTriVien form2 = new QuanLyChung_QuanTriVien();
+            form2.Show();
+        }
+        // -------------------------------------------------------------------
+
+
         public class CustomException : Exception
         {
             public CustomException(string message) : base(message) { }
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            TichLuy formDN = new TichLuy(txbTenTK.Text);
             ketNoi.Open();
             bool count;
             try
@@ -49,9 +67,11 @@ namespace QuanLySV5T
                         new CustomException("Đăng nhập thành công!");
                         if (count)
                         {
-                            this.Hide();
-                            QuanLyChung QL = new QuanLyChung();
-                            QL.Show();
+                            //Sửa chỗ này----------------------------------------
+                            
+                            OpenFormQuanLyChung();
+                            this.Close();
+                            //---------------------------------------------------
                         }
                     }
                 }
@@ -66,9 +86,11 @@ namespace QuanLySV5T
                         new CustomException("Đăng nhập thành công!");
                         if (count)
                         {
-                            this.Hide();
-                            QuanLyChung_QuanTriVien QLA = new QuanLyChung_QuanTriVien();
-                            QLA.Show();
+                            //Sửa chỗ này-------------------------------------------------------
+                            
+                            OpenFormQuanLyChung_QuanTriVien();
+                            this.Close();
+                            //-----------------------------------------------------------------
                         }
                     }
                 }
@@ -76,15 +98,12 @@ namespace QuanLySV5T
                 {
                     throw new CustomException("Bạn chưa chọn bạn là sinh viên hay quản trị viên!");
                 }
-                if (count)
-                {
-                    throw new CustomException("Đăng nhập thành công!");
-
-                }
-                else
+                //Sửa chỗ này bỏ cái đăng nhập thành công nha
+                if (count == false)
                 {
                     throw new CustomException("Sai tên mật khẩu hoặc tài khoản!");
                 }
+                //-------------------------------------------------------------------
             }
             catch (Exception ex)
             {

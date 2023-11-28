@@ -45,3 +45,27 @@ C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.pdb
 C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QLSV5T.DanhSachSV5T.resources
 C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QLSV5T.ThongKe.resources
 C:\Users\HP\source\repos\SV5T-HCMUTE\obj\Debug\QuanLySV5T.TraCuuSinhVien.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\bin\Debug\QuanLySV5T.exe.config
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\bin\Debug\QuanLySV5T.exe
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\bin\Debug\QuanLySV5T.pdb
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.csproj.AssemblyReference.cache
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.ChinhsuaChuongtrinh.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.DangNhap.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QLSV5T.DanhSachSV5T.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.Diem.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.DSSVTG.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.GopY.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.QuanLyChung.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.Properties.Resources.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.QuanLyChung_QuanTriVien.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.QuanLyChuongTrinh.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.QuanLyDangNhap.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QLSV5T.ThongKe.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.TichLuy.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.TraCuu.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.TraCuuSinhVien.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.TrangChu.resources
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.csproj.GenerateResource.cache
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.csproj.CoreCompileInputs.cache
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.exe
+D:\Nam3_HK1\Hệ qtri CSDL\C#\CuoiKy\obj\Debug\QuanLySV5T.pdb
